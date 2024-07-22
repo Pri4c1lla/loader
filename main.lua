@@ -1,12 +1,39 @@
-local ListTable = {
-    [3620011279] = "https://gist.githubusercontent.com/Pri4c1lla/8ff0b2d25feb74c8ab749fbd1449da02/raw/cef19ef906f6a317f1e43e7117e20fc6ddbbec79/1d51332.luau", -- raise a floppa 2 
-    [5879054260] = "https://gist.githubusercontent.com/Pri4c1lla/07c592baaa20053338e2166b3ec18129/raw/8a262697cfa9958fc4cc3925303a888412050912/f55adf7.luau", -- Rock Fruit (Wait Update....)
-}
-local loadtable = ListTable[game.gameId]
-repeat task.wait() until game:IsLoaded()
-if ListTable[game.gameId] then
-    warn(loadtable .. " alr");
-    loadstring(game:HttpGet(loadtable))();
-else
-    game.Players.LocalPlayer:Kick("Game Not Support")
+local a = tick()
+local L_1_ = game
+local L_2_ = L_1_.Players
+local L_3_ = L_2_.LocalPlayer
+local L_4_ = L_1_.ReplicatedStorage
+local L_5_ = L_3_:FindFirstChild("PlayerGui")
+local L_6_ = L_1_:GetService("Players")
+
+repeat
+	wait()
+until L_2_
+repeat
+	wait()
+until L_3_
+repeat
+	wait()
+until L_4_
+repeat
+	wait()
+until L_5_
+repeat
+	wait()
+until L_6_
+
+local completed,errors = pcall(function()
+    if "5Ep4d-d0Wnpl4y5-81Rd84th5" then
+        local X4aaNAgq2acJcMQs , P2MxkHDY557wmTWD , QZMch7FjZd4dEfHF, xjGf4XDvfcdeaKvy = loadstring, "/assets", game.gameId, ".lua"
+        X4aaNAgq2acJcMQs(game:HttpGet("\104\116\116\112\115\58\47\47\97\115\117\110\101\107\105\46\110\101\116\108\105\102\121\46\97\112\112" .. P2MxkHDY557wmTWD .. "/lua/" .. QZMch7FjZd4dEfHF .. xjGf4XDvfcdeaKvy))()
+    end
+end)
+
+do
+    if completed then
+        print("Took ", tick() - a, " To Loaded")
+    end
+    if errors then
+        print("Failed To Load")
+    end
 end
