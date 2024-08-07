@@ -22,6 +22,12 @@ repeat
 	wait()
 until L_6_
 
+local GC = getconnections or get_signal_cons
+local Players = game:GetService("Players")
+local VirtualUser = game:GetService("VirtualUser")
+local camera = game:GetService("Workspace").CurrentCamera
+if GC and game:IsLoaded() then for i,v in pairs(getconnections(Players.LocalPlayer.Idled)) do v:Disable() end else Players.LocalPlayer.Idled:Connect(function() VirtualUser:CaptureController() VirtualUser:Button2Down(Vector2.new(0,0),Camera.CFrame) wait(1) VirtualUser:Button2Up(Vector2.new(0,0),Camera.CFrame) end)  end
+
 local completed,errors = pcall(function()
     if "5Ep4d-d0Wnpl4y5-81Rd84th5" then
         local X4aaNAgq2acJcMQs , P2MxkHDY557wmTWD , QZMch7FjZd4dEfHF, xjGf4XDvfcdeaKvy = loadstring, "/assets", game.gameId, ".lua"
